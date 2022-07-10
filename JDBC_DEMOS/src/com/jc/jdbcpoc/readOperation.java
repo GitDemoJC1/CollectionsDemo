@@ -21,7 +21,7 @@ public class readOperation {
 				System.out.println();
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+		System.err.println("Something Went Wrong please check");
 			e.printStackTrace();
 		}
 	}
