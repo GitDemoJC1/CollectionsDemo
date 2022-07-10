@@ -68,14 +68,14 @@ public class OwnCollections {
 
 	// remove operation
 	public void remove(int index) {
-		for (int i = index; i != getSize() - 1; i++) {
+		for (int i = index; i < getSize() - 1; i++) {
 			originalArray[i] = originalArray[i + 1];
-			System.out.println(getSize() - 1 + " " + i);
 		}
+		
 	}
 
 	public void insertOper(int index, Object obj) {
-		for (int i = (int) (getSize() - 1); i > index; i--) {
+		for (int i = (int) (getSize() - 1); i >= index; i--) {
 			originalArray[i + 1] = originalArray[i];
 		}
 		originalArray[index] = obj;

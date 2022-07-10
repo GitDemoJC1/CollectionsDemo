@@ -29,11 +29,7 @@ public class Cilent {
 		}
 		System.out.println();
 		System.out.println("After Remove ::");
-	//	coll.remove(4);
-		System.out.println();
-		System.out.println(coll.getSize());
-		
-		
+	//coll.remove(4);
 		coll.insertOper(5, "%");
 		Object afterRemove[] = coll.getItems();
 		for (int i = 0; i < afterRemove.length; i++) {
