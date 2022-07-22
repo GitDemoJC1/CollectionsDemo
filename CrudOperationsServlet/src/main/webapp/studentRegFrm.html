@@ -1,0 +1,41 @@
+<Html>
+<head>
+<title>Registration Page</title>
+<style type="text/css">
+form {
+	width: 250px;
+	background-color: lime;
+	color: white;
+	font-style: italic;
+	font-weight: bolder;
+	border: 10px solid red;
+	 margin : 100px;
+	padding: 25px;
+	margin: 100px;
+}
+</style>
+</head>
+<body>
+	<h1
+		style="background-color: blue; color: white; border: 10px solid red; text-align: center">Welcome
+		to Learning World</h1>
+	<fieldset>
+		<legend>Student Registartion</legend>
+		<form action="/CrudOperationsServlet/studReg" method="post">
+			Name::<input type="text" name="SName"> <br> age::<input
+				type="text" name="SAge"> <br>
+				 Gender::<input type="radio" value="Male" name="SGender">Male 
+			<input type="radio" value="female" name="SGender">female 
+			<input type="radio" value="others" name="SGender">Others <br> 
+			course::<select name="SCourse">
+				<option>JAVA</option>
+				<option>Python</option>
+				<option>AWS</option>
+				<option>SAP</option>
+			</select> <br> phone :: <input type="text" name="SPhone"> <br>
+			<input type="submit">
+
+		</form>
+	</fieldset>
+</body>
+</html>
