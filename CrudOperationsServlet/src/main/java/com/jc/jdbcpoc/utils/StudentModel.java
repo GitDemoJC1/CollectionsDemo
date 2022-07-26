@@ -1,26 +1,27 @@
 package com.jc.jdbcpoc.utils;
 
 public class StudentModel {
-	private String studentName;
-	private String studentAge;
+	private String studentFName;
+	private String studentLName;
 	private String studentGender;
-	private String studentCourse;
+	private String studentPlace;
+	private String studentEmail;
 	private String studentPhone;
 
-	public String getStudentName() {
-		return studentName;
+	public String getStudentFName() {
+		return studentFName;
 	}
 
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
+	public void setStudentFName(String studentFName) {
+		this.studentFName = studentFName;
 	}
 
-	public String getStudentAge() {
-		return studentAge;
+	public String getStudentLName() {
+		return studentLName;
 	}
 
-	public void setStudentAge(String studentAge) {
-		this.studentAge = studentAge;
+	public void setStudentLName(String studentLName) {
+		this.studentLName = studentLName;
 	}
 
 	public String getStudentGender() {
@@ -31,12 +32,20 @@ public class StudentModel {
 		this.studentGender = studentGender;
 	}
 
-	public String getStudentCourse() {
-		return studentCourse;
+	public String getStudentPlace() {
+		return studentPlace;
 	}
 
-	public void setStudentCourse(String studentCourse) {
-		this.studentCourse = studentCourse;
+	public void setStudentPlace(String studentPlace) {
+		this.studentPlace = studentPlace;
+	}
+
+	public String getStudentEmail() {
+		return studentEmail;
+	}
+
+	public void setStudentEmail(String studentEmail) {
+		this.studentEmail = studentEmail;
 	}
 
 	public String getStudentPhone() {
@@ -49,8 +58,9 @@ public class StudentModel {
 
 	@Override
 	public String toString() {
-		return "StudentModel [studentName=" + studentName + ", studentAge=" + studentAge + ", studentGender="
-				+ studentGender + ", studentCourse=" + studentCourse + ", studentPhone=" + studentPhone + "]";
+		return "StudentModel [studentFName=" + studentFName + ", studentLName=" + studentLName + ", studentGender="
+				+ studentGender + ", studentPlace=" + studentPlace + ", studentEmail=" + studentEmail
+				+ ", studentPhone=" + studentPhone + "]";
 	}
 
 }

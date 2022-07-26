@@ -35,9 +35,9 @@ public class StudentController extends HttpServlet {
 		
 		boolean isRegStud = studentService.regStud(sModel);
 		if (isRegStud==false) {
-			pw.print("<h1 style='color:green;'>Student Registartion is success</h1>");
+			pw.print("<h1 style='color:red;'>Student Registartion is failed</h1>");
 		}else {
-			pw.print("<h1 style='color:red;'>Student Registartion is Failed</h1>");
+			pw.print("<h1 style='color:green;'>Student Registartion is Success</h1>");
 		}
 	
 	}

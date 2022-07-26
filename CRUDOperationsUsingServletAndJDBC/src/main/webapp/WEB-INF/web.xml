@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>CRUDOperationsUsingServletAndJDBC</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>luckyDrawRegister</servlet-name>
+		<servlet-class>com.jc.controller.LuckyDrawRegisterController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>luckyDrawRegister</servlet-name>
+		<url-pattern>/luckyDrawRegister</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>luckyDrawPersonSearch</servlet-name>
+		<servlet-class>com.jc.controller.LuckyDrawSerachController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>luckyDrawPersonSearch</servlet-name>
+		<url-pattern>/luckyDrawPersonSerach</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LuckyDrawgetRecords</servlet-name>
+		<servlet-class>com.jc.controller.LuckyDrawGetAllRecordsController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LuckyDrawgetRecords</servlet-name>
+		<url-pattern>/getAllRegisterRecords</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LuckyDrawDeleteController</servlet-name>
+		<servlet-class>com.jc.controller.LuckyDrawDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LuckyDrawDeleteController</servlet-name>
+		<url-pattern>/deleteRecord</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LuckyUpdate</servlet-name>
+		<servlet-class>com.jc.controller.LuckyDrawEditController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LuckyUpdate</servlet-name>
+		<url-pattern>/editRecord</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateRecord</servlet-name>
+		<servlet-class>com.jc.controller.UpdateRecordController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateRecord</servlet-name>
+		<url-pattern>/UpdateRecord</url-pattern>
+	</servlet-mapping> 
+</web-app>
